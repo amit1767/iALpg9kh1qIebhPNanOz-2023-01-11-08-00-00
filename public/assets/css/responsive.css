@@ -1,0 +1,933 @@
+
+
+/*Desktop to mobile Media:-*/
+
+@media only screen and (max-width: 359px) {
+
+
+
+
+
+}
+
+
+
+
+@media only screen and (max-width: 399px) {
+
+.assigne-ninja-box-modal .custom-btn-black{
+    padding: 5px 14px;
+    font-size: 16px;
+    width: 57%;
+}
+.order-heading-titlee h3 {
+    font-size: 22px;
+}
+
+
+.servicesetting .car-wash-form-section-details .add-promo span {
+    font-size: 12px;
+}
+
+
+
+
+
+
+
+}
+
+@media only screen and (max-width: 599px) {
+
+.heading-content-nav {
+     display: block; 
+    text-align: center;
+    margin-top: 1rem;
+}
+.heading-content-nav p {
+    border-left: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.dashboard-right-content .list-inline li{
+    max-width: 50%;
+    display: block;
+    max-width: 100%;
+}
+
+
+
+
+
+
+
+.login-section-main .login-form {
+    padding: 45px 30px !important;
+}
+
+.login-form .custom-btn{
+    padding: 11px;
+    width: 100%;
+}
+
+.menusetting .accordion-button {
+    font-size: 14px;
+}
+
+.menu_seting_banner_title-1 h5{
+    font-size: 14px;
+}
+
+.map-color-cordinate-box ul li {
+    font-size: 12px !important;
+}
+.switch-promo span {
+    font-size: 12px;
+}
+
+
+
+
+
+
+}
+
+/*767 media query css*/
+
+@media only screen and (max-width: 767px) {
+
+body div#map_wrapper  {
+    height: 420px !important;
+}	
+.hamburger {
+    top:3px !important;
+}
+.nav-header {
+    width: 30%;
+    margin-left: .2rem;
+    margin-top: 15px;
+    border-radius: 20px;
+}
+/*.map-color-cordinate-box {
+    margin-top: 3rem;
+    display: block;
+    width: 100%;
+}*/
+.map-color-cordinate-box {
+    margin-top: 0;
+    display: block;
+    width: 100%;
+    margin-left: 0;
+}
+.map-color-cordinate-box ul {
+    width: 100%;
+}
+/*.map-overlay-boxed input {
+    width: 55%;
+    margin-top: 3rem;
+}*/
+.map-overlay-boxed input {
+    width: 100%;
+    margin-top: 0;
+    height: 37px;
+    margin-bottom: 10px;
+}
+.track-ninja-list {
+    padding: 10px;
+    height: 70vh;
+    margin-bottom: 1.5rem;
+}
+.deznav {
+    left: 0;
+    top: 5rem;
+}
+
+.dashboard-right-content {
+    display: inline-block;
+    justify-content: initial;
+    vertical-align: middle;
+        padding-left: 0px;
+        width: 100%;
+}
+.dashboard-right-content ul {
+    display: block;
+    margin-top: 1rem;
+}
+
+
+.orders .dashboard-right-content.dashboard-r-c-res .list-inline li:nth-child(3) div#toggle-form {
+    margin-left: 0 !important;
+    width: 100% !important;
+}
+table.dataTable.row-border tbody th, table.dataTable.row-border tbody td, table.dataTable.display tbody th, table.dataTable.display tbody td {
+    border-top: 0 !important;
+    font-size: 13px;
+    line-height: normal;
+}
+.dashboard-right-content div#toggle-form ,.dashboard-right-content div#toggle-form01 {
+    display: flex;
+    width: 100% !important;
+    margin-left: 0px !important;
+}
+.tabs_wrapper-customer-detailss ul.tabs {
+    width: 100% !important;
+}
+.tabs_wrapper-customer-detailss .tab_container {
+    width: 100% !important;
+}
+.sharp.btn-xs {
+    padding: 3px;
+    width: 18px;
+    height: 18px;
+    min-width: 18px;
+    min-height: 18px;
+    font-size: 10px;
+}
+ul#accordion {
+    width: 100%;
+}
+.tab-content-custom-main{
+	width:100% !important;
+    margin-left: 0px;
+}
+.zones-reach-boxx {
+    display: inline;
+}
+
+table, th, td {
+    font-size: 12px !important;
+}
+
+/*mahesh css*/
+
+.content-body .dashboard-right-content ul.list-inline li {
+    margin-bottom: 10px !important;
+}
+.chart-sidebar .card div#sparkline8 canvas {
+    width: 260px !important;
+}
+
+.tab-content-custom-main{
+    margin-top: 1rem;
+}
+
+
+.deznav{
+    z-index: 40;
+}
+
+.pop-up-message-box .gree-custom-btn{
+    padding: 10px 5px;
+}
+.car-wash-form-section-details .switch-promo {
+   
+    height: 70px;
+}
+
+
+.car-wash-section-box .switch label{
+    margin-left: 7px;
+}
+
+.car-wash-orde-redit-btn{
+    margin-left: 10px;
+}
+
+.car-wash-section-box .apply-button{
+    width: 75px;
+}
+
+.third-section .celebraty-main .Featured-imag img {
+    height: 215px !important;
+}
+
+li.order-searchh input{
+    text-align: center;
+}
+
+
+.dashboard-right-content .text-box-period {
+    padding: 4px;
+    width: 100%;
+}
+            
+.customer .add-new-order-tabss-nav .nav-pills .nav-link{
+    margin-right: 5rem !important;
+}
+
+.servicesetting .car-wash-form-section-details .add-promo span{
+    font-size: 14px;
+
+}
+.body-small-details p{
+    padding-bottom: 0 ;
+}
+
+.filter-option .filter-option-inner .filter-option-inner-inner{
+    font-size: 14px;
+}
+
+.vertical-tab .tab-content{
+    padding: 0;
+}
+
+.vertical-tab .tab-content{
+    padding: 0;
+}
+
+.bootstrap-select .dropdown-toggle .filter-option{
+    text-align: right !important;
+}
+
+.form-toggle-box{
+    width:95%;
+    right: 4%;
+}
+.form-toggle-box01{
+    width: 100%;
+}
+.reset-button{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.apply-button{
+    width: 100%;
+}
+
+.table-responsive{
+    margin-top: 0 !important;
+} 
+
+.heading-content-nav h3{
+    font-size: 22px;
+}
+.customer .heading-content-nav h3{
+    font-size: 20px;
+}
+.gree-custom-btn{
+    text-align: center;
+}
+.customeradd-custom-btn{
+    text-align: center;
+}
+
+.command-dropdown .dropdown-menu-right {
+    min-width: 292px;
+   
+    width: 100%;
+    left: initial;
+}
+
+
+.header-right .header-profile .dropdown-menu {
+    padding: 15px 0;
+    min-width: 7.5rem;
+}
+.dropdown-menu {
+    left: -5px;
+    top: 145%;
+}
+.deznav .metismenu > li > a{
+	font-size:14px;
+}
+
+[data-sidebar-style="full"] .header, [data-sidebar-style="overlay"] .header {
+       position: fixed !important;
+}
+
+.menusetting .tab-content-custom-main{
+    margin-left: 0;
+}
+
+.servicesetting .service_setting_filter_card .service_setting_filter_btn a{
+    padding: 9px 10px;
+}
+
+.cencel_btn{
+    width: 100%;
+}
+.add_now_btn{
+    width: 100%;
+}
+[data-header-position="fixed"] .header { 
+  z-index: 100;
+}
+[data-sidebar-position="fixed"][data-layout="vertical"] .nav-header {
+ 
+  z-index: 102;
+}
+
+.zones-reach-text{
+    width: 80%
+}
+
+.meunu_seting_right_img {
+    width: 100%;
+}
+.order-searchh input {
+    border-radius: 5px !important;
+}
+
+.login-section-main .login-form {
+    padding: 45px 30px !important;
+}
+
+.login-form h1 {
+    margin-bottom: 2.5rem;
+    font-size: 28px !important;
+    font-weight: 600;
+}
+.vertical-tab {
+    padding-left: 0;
+    margin-top: 1rem;
+}
+.tabs_wrapper-customer-detailss .tab_container {
+    padding-left: 0 !important;
+
+}
+
+.dashboard-right-content .list-inline li a{
+    margin-left: 0 !important;
+    width: 100% !important;
+}
+
+
+/*12/10/2021*/
+.commandcenter .vertical-tab .nav-tabs {
+    width: 100% !important;
+}
+
+.add-new-order-tabss-nav .card-body ul li{
+    width: 100% !important;
+}
+
+
+.order-searchh:before{
+    display: none;
+}
+
+.task-upadet-commandcenter.command-center-sn{
+	width: 100%;
+}
+
+.menusetting .meunu_seting_right_img{
+    top: 0;
+}
+.map-overlay-boxed{
+    justify-content: center !important;
+    left: 0px !important;
+    right: 0;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+.w_50{
+    width: 50%;
+}
+
+.select_filed p {   
+    right: 10%;
+    font-size: 12px !important;
+ 
+}
+.atten_sh_caption {
+    font-size: 14px;
+    top: -9px;
+    right: 14px;
+}
+.attendance_sheet_top_heading .attendance_sheet_arrow span, .attendance_sheet_top_heading .change_w-m_btn li .nav-link.active {  
+    padding: 7px;
+    font-size: 12px;
+}
+.attendance_sheet_top_heading .change_w-m_btn li .nav-link {    
+    padding: 7px 2px;
+    font-size: 12px;
+}
+.time_filter_box .filter_by_city{
+    width: 100% !important;
+}
+
+
+.w_100{
+    width: 100%;
+}
+
+
+
+
+
+
+
+}
+
+/*For Ipad Media:-*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+    .tabs_wrapper-customer-detailss .tab_container{
+        padding-left: 0 !important;
+        width: 100%;
+    }   
+    .tabs_wrapper-customer-detailss ul.tabs {
+        width: 35%;
+        margin-bottom: 1rem;
+    }
+    .add-new-order-tabss-nav .nav-pills .nav-item {
+        width: 49%;
+    }
+    .tracking_detail_info_row p {
+        font-size: 12px !important;
+    }
+    .tab-content#order-request-data1 .tab-pane {
+        width: 385px;
+    }
+    .subscriptions .tabs_wrapper-customer-detailss ul.tabs {
+        width: 30%;     
+        margin-right: 1rem; 
+    }
+    .subscriptions .tabs_wrapper-customer-detailss .tab_container {
+        width: 66%;
+    }
+
+.menusetting .meunu_seting_right_img{
+    top: 0;
+}
+.revenue .whiteshadow-custom-btn{ 
+    width: 125px;
+}
+
+.w_100{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+}
+
+/*For Ipad-Pro Media:-*/
+@media only screen and (min-width: 992px) and (max-width: 1024px) {
+.tabs_wrapper-customer-detailss .tab_container {
+    width: 100%;
+    padding-left: 1rem; 
+}
+
+.task-upadet-commandcenter.command-center-sn{
+	width: 100%;
+}
+.command-center-sn ul.tabs li.active {
+    font-size: 14px;
+}
+.command-center-sn ul.tabs li {
+    font-size: 14px;
+}
+.view-route-button{
+    padding: 0px 10px;
+}
+.tracking_detail_info_row p {
+    font-size: 12px !important;
+}
+.tab-content#order-request-data1 .tab-pane {
+    width: 385px;
+}
+.ui-widget.ui-widget-content {
+    width: 195px;
+    height: 260px;
+}
+
+.fixed-bottom-buttonn{
+    margin: 0 ;
+}
+.subscriptions .tabs_wrapper-customer-detailss .tab_container {
+    width: 75%;
+}
+.menusetting .meunu_seting_right_img {
+   width: 100%;
+}
+.inner-vichel-hading h3 {
+    font-size: 16px;
+}
+.blue-custom-btn {   
+    width: 130px;
+}
+.revenue .whiteshadow-custom-btn{ 
+    width: 125px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+/*Screen Resolution MacBook Pro Laptop 1440x990 Media:-*/
+@media only screen and (min-width: 1367px) and (max-width: 1649px) {
+[data-header-position="fixed"] .header {
+    width: 77.20%;
+	right:7px;
+}	
+.chart-point {
+    display: block;
+    align-items: center;
+    padding: 0;
+}
+img.green-border, img.blue-border, img.red-border{
+    width: 30px;
+    height: 30px;
+}
+.track-ninja-list input[type="radio"] {
+    width: 15px;
+    height: 15px;
+}
+.track-ninja-list table thead th {
+    padding: 10px 5px !important;
+    font-size: 14px !important;
+}
+.content-body .container-fluid {
+    padding-top: 35px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+.custom-btn, .gree-custom-btn, .whiteshadow-custom-btn, .customeradd-custom-btn, .blue-custom-btn{
+	padding: 10px;
+    font-size: 12px;
+    margin-left: 10px;    
+}
+li.order-searchh input {
+    height: 38px;
+}
+table.dataTable.row-border tbody th, table.dataTable.row-border tbody td, table.dataTable.display tbody th, table.dataTable.display tbody td {
+    border-top: 0 !important;
+    font-size: 14px;
+}
+table.dataTable thead th, table.dataTable tfoot th {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.text-box-period h5 {
+    font-size: 13px;
+    margin-bottom: -6px;
+}
+.text-box-period small {
+    font-size: 11px;
+}
+.change-period-box-main i {
+    padding: 8px 12px 0;
+}
+div#toggle-form {
+    margin-left: 10px;
+}
+.change-period-box-main {
+    display: flex;
+    width: 242px;
+}
+.track-ninja-list td.sorting_1 {
+    padding-left: 0 !important;
+}
+.track-ninja-list {
+    padding: 10px;
+    height: 70vh;
+}
+.green-dott, .red-dott, .blue-dott{
+	width:15px;
+	height:15px;
+}
+.map-color-cordinate-box ul li {
+    padding:15px 10px;
+}
+.map-color-cordinate-box {
+    margin-top: 1rem;
+}
+
+[data-sidebar-style="full"][data-layout="vertical"] .menu-toggle .header {
+    padding-left: 0;
+    width: 91%;
+}
+.tabs_wrapper-customer-detailss ul.tabs {
+    width: 20%;
+    padding: 10px;
+}
+.tabs_wrapper-customer-detailss ul li.active {
+    font-size: 16px;
+}
+
+/*mahesh css*/
+
+.fixed-pane {
+    position: fixed;
+    top: 14%;
+    width: 24%;
+}
+.fixed-pane-1 {       
+    top: 8%;      
+}
+
+
+
+
+
+
+
+
+
+
+}
+
+
+@media only screen and (min-width: 1920px) {
+    .fixed-pane {
+        position: fixed;
+        top: 16%;
+        width: 27%;
+    }
+    .fixed-pane .fixed_task_detail {
+        height: 700px;
+    }
+    .fixed-pane-1 {       
+        top: 8%;      
+    }
+
+
+
+}
+
+/*Small Desktop Screen Resolution 1366x768 Media:-*/
+@media only screen and (max-width: 1366px) {
+	[data-header-position="fixed"] .header {
+    width: 77.20%;
+	position:absolute;
+    right: 4px;
+}
+.chart-point {
+    display: block;
+    align-items: center;
+    padding: 0;
+}
+img.green-border, img.blue-border, img.red-border {
+    width: 30px;
+    height: 30px;
+}
+.track-ninja-list input[type="radio"] {
+    width: 15px;
+    height: 15px;
+}
+.track-ninja-list table thead th {
+    padding: 10px 5px !important;
+    font-size: 14px !important;
+}
+.custom-btn, .gree-custom-btn, .whiteshadow-custom-btn, .customeradd-custom-btn, .blue-custom-btn{
+	padding: 9px;
+    font-size: 12px;
+    margin-left: 10px;
+    width: 165px;
+}
+li.order-searchh input {
+    height: 38px;
+}
+table.dataTable.row-border tbody th, table.dataTable.row-border tbody td, table.dataTable.display tbody th, table.dataTable.display tbody td {
+    border-top: 0 !important;
+    font-size: 14px;
+}
+table.dataTable thead th, table.dataTable tfoot th {
+    font-weight: bold;
+    font-size: 14px;
+}
+.text-box-period h5 {
+    font-size: 13px;
+    margin-bottom: -6px;
+}
+.text-box-period small {
+    font-size: 11px;
+}
+.change-period-box-main i {
+    padding: 8px 12px 0;
+}
+.change-period-box-main .ti-calendar{
+    padding: 8px 12px 0;
+}
+div#toggle-form {
+    margin-left: 10px !important;
+}
+.change-period-box-main {
+    display: flex;
+    width: 242px;
+}
+.track-ninja-list td.sorting_1 {
+    padding-left: 0 !important;
+}
+.track-ninja-list {
+    padding: 10px;
+    height: 70vh;
+}
+.green-dott, .red-dott, .blue-dott{
+	width:15px;
+	height:15px;
+}
+.map-color-cordinate-box ul li {
+    padding:15px 10px;
+}
+/*.map-color-cordinate-box {
+    margin-top: 1rem;
+}*/
+[data-sidebar-style="full"][data-layout="vertical"] .menu-toggle .header {
+    padding-left: 0;
+    width: 91%;
+}
+.tabs_wrapper-customer-detailss ul.tabs {
+    width: 23%;
+    padding: 10px;
+    margin-bottom: 1rem;
+}
+.tabs_wrapper-customer-detailss ul li.active {
+    font-size: 14px;
+}
+
+
+/*mahesh Csss*/
+
+
+
+.chart-sidebar div#sparkline8 canvas {
+    width: 180px;
+}
+
+.chart-sidebar .chart-point {
+    display: flex;
+    flex-direction: column;
+    
+}
+.hamburger { 
+  top: 25px;
+}
+
+.tab-content-custom-main{
+    width: 69%;
+}
+.servicesetting .service_setting_filter_card .service_setting_filter_btn {  
+    padding: 15px 18px;
+}
+.menusetting .meunu_seting_right_img{
+    bottom: 0;
+    margin-top: 25px;
+}
+
+.menusetting .meunu_seting_right_img {
+    max-width: 370px;
+}
+
+
+.dashboard-right-content{
+    justify-content: flex-end;
+}
+.tabs_wrapper-customer-detailss{
+    margin-top: 1rem;
+}
+.tabs_wrapper-customer-detailss .tab_container{
+    padding-left: 1rem;    
+}
+
+.c-name i {
+    right: -13px;
+}
+.c-name h5{
+    font-size: 16px;
+}
+.c-name p{
+    font-size: 13px !important;
+}
+
+.c-name p strong {
+    font-weight: bolder;
+    word-break: break-word;
+}
+.add-new-order-tabss-nav .nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+.add-new-order-tabss-nav .nav-pills .nav-link {
+    border-radius: .25rem;
+    background: #fff;
+    margin-right: 3rem; 
+    width: 100%;
+    padding: 16px;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+}
+.login-form h1 {
+    margin-bottom: 2.5rem;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+
+.w-36{
+    width: 36%;
+}
+.commandcenter .tab_container {
+    padding-left: 0 !important;
+}
+
+.tabs_wrapper-customer-detailss ul li {
+    font-size: 14px;
+}
+.car-tab-text-n p{
+    font-size: 12px !important;
+}
+
+/*08/11/2021 css*/
+.dash-ic h5 span {
+    font-size: 18px;
+}
+
+
+.w_37{
+	width: 37%;
+}
+.w_55{
+	width: 55%;
+}
+/*
+.w_20{
+	width: 23%;
+}*/
+
+.commandcenter .vertical-tab .nav-tabs {
+    width: 55%;
+}
+
+.payment-select .bootstrap-select .btn{
+    width: 55px;
+}
+.payment-select .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+    width: 170px;
+}
+.filter_by_city{
+    width: 180px !important;
+}
+
+.trackstaff .map-color-cordinate-box {
+    margin-top: 1rem;
+}
+
+
+
+
+	
+}
