@@ -1,0 +1,2925 @@
+@font-face {
+    font-family: "MaisonNeue-Book", sans-serif;
+    src: url(../fonts/MaisonNeue-Book.ttf);
+  }
+  @font-face {
+    font-family: "MaisonNeue-BookItalic", sans-serif;
+    src: url(../fonts/MaisonNeue-BookItalic.ttf);
+  }
+  @font-face {
+    font-family: "MaisonNeue-Demi", sans-serif;
+    src: url(../fonts/MaisonNeue-Demi.ttf);
+  }
+  @font-face {
+    font-family: "MaisonNeue-DemiItalic", sans-serif;
+    src: url(../fonts/MaisonNeue-DemiItalic.ttf);
+  }
+  body {
+    background: #f5f5f5;
+    color: #3c3c3c;
+    font-family: "MaisonNeue-Book", sans-serif;
+  }
+  ::-webkit-scrollbar {
+    width: 3px;
+    border-radius: 2em;
+    padding: 3px;
+  }
+  ::-webkit-scrollbar-track {
+    background-color: #fff;
+    border-radius: 2em;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(
+      90deg,
+      rgba(0, 160, 255, 1) 0%,
+      rgba(110, 225, 255, 1) 100%
+    );
+    border-radius: 2em;
+  }
+  a {
+    /*    color: #00A0FF !important;*/
+    text-decoration: none;
+    transform: 0.5s all;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  section {
+    position: relative;
+  }
+  .form-group {
+    margin-bottom: 20px;
+    position: relative;
+  }
+  .draggable {
+    cursor: move;
+  }
+  .gray-background {
+    background: #ccd2e3;
+  }
+  .orange-background {
+    background: #da7c0c;
+  }
+  .green-background {
+    background: #11e20c;
+  }
+  input::placeholder,
+  textarea::placeholder {
+    opacity: 0.6;
+  }
+  input:focus, select:focus,
+  select:focus-visible, input:focus-visible {
+    outline: 0;
+    border: 0;
+    box-shadow: none;
+  }
+  #login {
+    background-image: url(../images/bg-horse.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+  .login-form {
+    position: relative;
+    width: 338px;
+    background: #f7f7f9; /*    height: 550px;*/
+    border-radius: 18px;
+    padding: 15px 20px 20px 20px;
+  }
+  .login-form .form-box .img-box {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    text-align: center;
+    margin: 30px auto 20px auto;
+  }
+  .form-heading h3 {
+    font-family: "MaisonNeue-Demi", sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 32px;
+    margin-bottom: 20px;
+  }
+  .form-box form .form-group input {
+    background-color: #fff; /*box-shadow:0px 4px 4px 0px rgba(0,0,0,0.25);*/
+    height: 48px;
+    width: 100%;
+    border-radius: 6px;
+    border: 0;
+    font-family: "MaisonNeue-Book", sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0 0 10px 0;
+    padding: 0 25px;
+    outline: 0;
+  }
+  .form-box form .form-group {
+    position: relative;
+    margin: 10px 0;
+  }
+  .form-box form .form-group input::placeholder {
+    color: #bbbbbb;
+  }
+  .form-box form .form-group input::focus {
+    outline: 0;
+    box-shadow: none;
+  }
+  .form-box form .form-group a {
+    color: #3c3c3c;
+    display: block;
+    font-family: "MaisonNeue-Book", sans-serif;
+    font-size: 16px; /*    font-weight:400;*/
+    line-height: 18px;
+    margin-bottom: 20px;
+    top: 8px;
+    position: relative;
+    text-decoration: underline;
+    text-align: center;
+  }
+  .form-box form .form-group button[type="submit"] {
+    background: rgb(0, 160, 255);
+    background: linear-gradient(
+      90deg,
+      rgba(0, 160, 255, 1) 0%,
+      rgba(110, 225, 255, 1) 100%
+    );
+    color: #fff;
+    font-family: "MaisonNeue-Demi", sans-serif;
+    border: 0;
+    border-radius: 18px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+    margin-top: 10px;
+    height: 60px;
+    width: 100%;
+  }
+  .form-box form .form-group i {
+    font-size: 18px;
+  }
+  .admin-sidebar {
+    background-color: #f7f7f9;
+    position: fixed;
+    box-shadow: -2px 4px 15px 0px #00000026;
+    padding: 33px 32px 33px 24px;
+    height: 100%;
+    width: inherit;
+  }
+  .sidebar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .sidebar-header .img-box {
+    height: 61px;
+    width: 61px;
+  }
+  .sidebar-header .header-title {
+    position: relative;
+    flex: 0 0 25%;
+  }
+  .sidebar-header .header-title h2 {
+    color: #3c3c3c;
+    font-family: "MaisonNeue-Demi", sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 19px;
+    text-align: right;
+  }
+  .sidebar-nav {
+    position: relative;
+    margin-top: 20px;
+  }
+  .sidebar-nav ul.nav li.nav-item {
+    border-bottom: 1px solid #d7d7d7;
+    width: 100%;
+    padding: 8px 0;
+    transition: 0.5s all;
+  }
+  .sidebar-nav ul.nav li.nav-item a {
+    color: #3c3c3c;
+    font-family: "MaisonNeue-Demi", sans-serif;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 24px;
+    transition: 0.5s all;
+  }
+  .sidebar-nav ul.nav li.nav-item:hover a {
+    color: rgba(0, 160, 255, 1);
+    transition: 0.5s all;
+    transform: translateX(6px);
+  }
+  .sidebar-nav ul.nav li.nav-item.active a {
+    color: #00a0ff;
+  }
+  .admin-sidebar .session-out {
+    padding: 15px 32px 33px 0px;
+  }
+  .admin-sidebar .session-out a {
+    color: #3c3c3c;
+    font-family: "MaisonNeue-Book", sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration: underline;
+  }
+  .admin-sidebar .site-title {
+    position: absolute;
+    width: 85%;
+    left: 25px;
+    margin: 0 auto;
+    bottom: 0px;
+  }
+  .admin-dashboard {
+    background: #f5f5f5;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: self-start;
+    height: 100vh;
+  }
+  .users-panel {
+    display: block;
+    height: 100%;
+  }
+  .admin-dashboard header {
+    position: sticky;
+    top: 0;
+    background: whitesmoke;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    top: 0;
+    padding: 30px 25px 0px 25px;
+    flex: 0 0 100%;
+    z-index: 9999;
+  }
+  .admin-dashboard header .admin-short-info h2 {
+    color: #3c3c3c;
+    font-family: "MaisonNeue-Demi", sans-serif;
+    font-size: 38px;
+    line-height: 32px;
+    font-weight: 600;
+  }
+  .admin-dashboard header .admin-short-info h2 span a.user-new-btn {
+    background: rgb(233, 233, 233);
+    background: linear-gradient(
+      180deg,
+      rgba(233, 233, 233, 1) 0%,
+      rgba(110, 225, 255, 1) 35%,
+      rgba(0, 160, 255, 1) 100%
+    );
+    color: #fff;
+    border: 0;
+    border-radius: 20px;
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 500;
+    padding: 8px 15px;
+    height: 34px;
+    width: 100%;
+    display: inline;
+    top: -6px;
+    left: 15px;
+    position: relative;
+  }
+  .admin-dashboard header .admin-full-info {
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex: 0 0 50%;
+    justify-content: flex-end;
+  }
+  .admin-short-info, .admin-full-info{
+      padding-bottom: 15px;
+  }
+  .admin-dashboard header .admin-full-info .admin-media {
+    position: relative;
+    flex: 0 0 20%;
+  }
+  .admin-dashboard header .admin-full-info .admin-media img {
+    width: 68px;
+    height: 68px;
+  } /*.admin-dashboard .admin-full-info .admin-media img {    border: 10px solid;    border-radius: 50%;    border-image-slice: 1;    border-width: 5px;    border-image-source: linear-gradient(90deg, rgba(233,166,67,1) 0%, rgba(252,113,36,1) 100%);}*/
+  .admin-dashboard header .admin-full-info .admin-media img {
+    width: 68px;
+    height: 68px;
+    border: 0px solid;
+    border-image-slice: 1;
+    border-width: 0px;
+    border-radius: 100%;
+    object-fit: cover;
+    box-shadow: 0px 0px 0px 4px rgba(233, 166, 67, 1),
+      0px 0px 0px 4px rgba(252, 113, 36, 1);
+  }
+  .admin-dashboard header .admin-full-info .admin-text a,
+  .admin-dashboard header .admin-full-info .admin-text p,
+  .admin-dashboard header .admin-full-info .admin-text h5 {
+    color: #3c3c3c;
+    font-family: "MaisonNeue-Demi", sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: right;
+    margin: 0;
+  }
+  .admin-dashboard header .admin-full-info .admin-text {
+    position: relative;
+    padding-right: 15px;
+  }
+  .admin-dashboard header .admin-full-info .admin-text h5 {
+    font-weight: 600;
+  }
+  .admin-dashboard header .admin-full-info .admin-text p {
+    font-weight: 400;
+  }
+  .admin-dashboard header .admin-full-info .admin-text a {
+    color: #00a0ff;
+    display: block;
+    font-weight: 400;
+  }
+  .admin-dashboard header .admin-full-info .admin-support {
+    flex: 0 0 35%;
+  }
+  .admin-dashboard header .admin-full-info .admin-support button {
+    background: rgb(0, 160, 255);
+    background: linear-gradient(
+      90deg,
+      rgba(0, 160, 255, 1) 0%,
+      rgba(110, 225, 255, 1) 100%
+    );
+    color: #fff;
+    border: 0;
+    border-radius: 10px;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 600;
+    height: 44px;
+    width: 100%;
+  }
+  .admin-dashboard-panel {
+    flex: 1 0 60%;
+    padding: 0px 25px 30px 25px;
+  }
+  .admin-dashboard-panel .admin-welcome-panel {
+      position: relative;
+      max-width: 500px;
+  }
+  .admin-dashboard-panel .admin-welcome-panel h2 {
+    color: #3c3c3c;
+    font-family: "MaisonNeue-Demi", sans-serif;
+    font-size: 48px;
+    line-height: 49px;
+    font-weight: 600;
+    margin: 0 0 10px 0;
+  }
+  .admin-dashboard-panel .admin-welcome-panel p {
+    color: #3c3c3c;
+    font-family: "MaisonNeue-Book", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .user-filter-panel {
+    background: whitesmoke;
+    width: 100%;
+    padding: 30px 0px 0px 0px;
+  }
+  .filter-form form {
+    display: flex;
+    position: relative;
+  }
+  .filter-form .user-types,
+  .search-form .user-types {
+    background: #fff;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    border: 0;
+    border-radius: 6px;
+    margin-right: 15px;
+    width: 192px;
+    position: relative;
+  }
+  .filter-form .user-types select,
+  .search-form .user-types input {
+    background-color: transparent;
+    color: #3c3c3c;
+    font-family: "MaisonNeue-Book", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    border: 0;
+    border-radius: 6px;
+    padding: 0 10px;
+    -webkit-appearance: none;
+    z-index: 99;
+  }
+  .filter-form .user-types select:focus,
+  .search-form .user-types input:focus {
+    outline: 0;
+    box-shadow: none;
+    border: 0;
+  }
+  .filter-form .user-types img,
+  .search-form .user-types img {
+    position: absolute;
+    right: 10px; /*    top: 13px;*/
+  }
+  .search-form .user-types {
+    border: 2px solid #eeeeee !important;
+    border-radius: 26px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: 0;
+  }
+  .search-form .user-types input {
+    border: 0;
+    border-radius: 26px;
+    padding: 0 15px;
+  }
+  .user-personal-panel {
+    padding-top: 40px;
+    background-color: #f5f5f5;
+    display: inherit;
+    z-index: 3;
+    position: relative;
+  }
+  .user-personal-panel {
+    width: 100%; /*height: 65vh;    overflow-y: scroll;    padding-right: 1rem;    padding-left: 1rem;*/
+  }
+  .user-listing-panel ul.nav-panel li.nav-panel-item {
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    min-height: 100px;
+    height: auto;
+    margin: 1rem;
+    margin-left: 0;
+    background: #f7f7f9;
+    box-shadow: 0px 1px 3px 0px #00000026;
+    padding: 1rem;
+  }
+  .user-listing-panel ul.nav-panel li.nav-panel-item .user-media {
+    display: flex;
+    align-items: center;
+    flex: 0 0 50%;
+  }
+  .user-listing-panel ul.nav-panel li.nav-panel-item .user-media img {
+    width: 68px;
+    height: 68px;
+    border: 0px solid;
+    border-image-slice: 1;
+    border-width: 0px;
+    border-radius: 100%;
+    object-fit: cover; /*    box-shadow: 0px 0px 0px 4px rgb(233 166 67), 0px 0px 0px 4px rgb(252 113 36);*/
+  }
+  .profile-picture {
+    border-radius: 100%;
+    padding: 3px;
+  }
+  .blue-border {
+    background: linear-gradient(
+      180deg,
+      rgba(233, 233, 233, 1) 0%,
+      rgba(110, 226, 255, 1) 35%,
+      rgba(0, 160, 255, 1) 100%
+    );
+  }
+  .purple-border {
+    background: linear-gradient(
+      180deg,
+      rgba(123, 77, 169, 1) 0%,
+      rgba(164, 21, 192, 1) 100%
+    );
+  }
+  .orange-border {
+    background: linear-gradient(
+      180deg,
+      rgba(233, 233, 233, 1) 0%,
+      rgba(233, 166, 67, 1) 35%,
+      rgba(252, 113, 36, 1) 100%
+    );
+  }
+  .brown-border {
+    background: linear-gradient(
+      180deg,
+      rgba(152, 124, 67, 1) 0%,
+      rgba(138, 109, 58, 1) 35%,
+      rgba(85, 51, 25, 1) 100%
+    );
+  }
+  .user-listing-panel ul.nav-panel li.nav-panel-item .user-media .user-info {
+    position: relative;
+    margin-left: 15px;
+  }
+  .user-listing-panel ul.nav-panel li.nav-panel-item .user-media .user-info h5 {
+    color: #3c3c3c;
+    font-family: "MaisonNeue-Demi", sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    margin: 0;
+  }
+  .user-listing-panel ul.nav-panel li.nav-panel-item .user-media .user-info a,
+  .user-listing-panel ul.nav-panel li.nav-panel-item .user-media .user-info p {
+    color: #3c3c3c;
+    font-family: "MaisonNeue-Book", sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    margin: 0;
+  }
+  .user-listing-panel ul.nav-panel li.nav-panel-item .user-media .user-info a {
+    color: #00a0ff;
+  }
+  .user-listing-panel ul.nav-panel li.nav-panel-item .user-action {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 25px;
+  }
+  .user-listing-panel ul.nav-panel li.nav-panel-item .user-action a.user-new-btn {
+    background: rgb(233, 233, 233);
+    background: linear-gradient(
+      180deg,
+      rgba(233, 233, 233, 1) 0%,
+      rgba(110, 225, 255, 1) 35%,
+      rgba(0, 160, 255, 1) 100%
+    );
+    color: #fff;
+    border: 0;
+    border-radius: 20px;
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 500;
+    height: 34px;
+    width: 70px;
+    text-align: center;
+    display: inline;
+    position: relative;
+  }
+  .user-action-panel {
+    /* position: fixed; */
+    background: whitesmoke;
+    right: 0;
+    width: 100%;
+    padding: 25px 0px 10px 0px;
+    z-index: 5;
+  }
+  .user-action-panel .action-box {
+    display: flex;
+    justify-content: space-between; /*    margin-bottom: 50px;*/
+  }
+  .user-action-panel .action-box .social-info ul {
+    column-gap: 22px;
+    margin-bottom: 0;
+  }
+  .user-action-panel .action-box .social-info ul li {
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+  }
+  .social-info ul {
+    margin-bottom: 0;
+  }
+  .social-info ul li span {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .personal-form .user-media {
+    position: relative;
+  }
+  .personal-form .user-media img.user-thumb {
+    width: 132px;
+    height: 132px;
+    border: 0px solid;
+    border-image-slice: 1;
+    border-width: 0px;
+    border-radius: 100%;
+    object-fit: cover;
+    box-shadow: 0px 0px 0px 4px rgb(233 166 67), 0px 0px 0px 4px rgb(252 113 36);
+  }
+  .personal-form .user-media span {
+    cursor: pointer;
+    position: absolute;
+    right: 22px;
+  }
+  .personal-form .user-media input {
+    position: absolute;
+    right: 0;
+    opacity: 0;
+    z-index: 99;
+    cursor: pointer;
+    display: inline;
+    width: 40px;
+    z-index: 99;
+  }
+  .personal-form {
+    position: relative;
+  }
+  .personal-form .form-group input {
+    height: 40px;
+    width: 100%;
+    border-radius: 6px;
+    border: 0;
+    font-family: "MaisonNeue-Book", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    margin: 0 0 10px 0;
+    padding: 0 15px;
+    outline: 0;
+  }
+  .personal-form .form-group .user-types {
+    background: #fff;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    border: 0;
+    margin: 0 0 10px 0;
+    border-radius: 6px;
+    margin-right: 15px;
+    width: 100%;
+    position: relative;
+  }
+  .personal-form .form-group .user-types select {
+    background-color: transparent;
+    color: #3c3c3c;
+    font-family: "MaisonNeue-Book", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    border: 0;
+    border-radius: 6px;
+    padding: 0 10px;
+    -webkit-appearance: none;
+    z-index: 99;
+  }
+  .personal-form .form-group .user-types img {
+    position: absolute;
+    right: 10px;
+    top: 12px;
+  }
+  .personal-form .form-group textarea {
+    height: 110px;
+    width: 100%;
+    border-radius: 6px;
+    border: 0;
+    font-family: "MaisonNeue-Book", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    margin: 0 0 10px 0;
+    padding: 15px;
+    outline: 0;
+    resize: none;
+  }
+  .personal-form .form-group .user-types select:focus,
+  .personal-form .form-group input:focus,
+  .personal-form .form-group textarea {
+    outline: 0;
+    box-shadow: none;
+    border: 0;
+  }
+  .send-message a {
+    background: rgb(233, 233, 233);
+    background: linear-gradient(
+      180deg,
+      rgba(233, 233, 233, 1) 0%,
+      rgba(110, 225, 255, 1) 35%,
+      rgba(0, 160, 255, 1) 100%
+    );
+    color: #fff;
+    border: 0;
+    border-radius: 20px;
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 500;
+    padding: 8px 15px;
+    height: 34px;
+    width: 161px;
+    display: inline;
+    top: 0px;
+    position: relative;
+  }
+  .user-listing-panel {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /*    margin-top: 75px;*/
+  }
+  .user-other-info ul li .form-switch {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #3c3c3c;
+    padding: 20px 0px;
+  }
+  .user-other-info ul li:nth-child(1) .form-switch {
+    border-top: 1px solid #3c3c3c;
+  }
+  .user-other-info ul li .form-switch label {
+    color: #3c3c3c;
+    font-family: "MaisonNeue-Demi", sans-serif;
+    font-size: 21px;
+    line-height: 24px;
+    font-weight: 600;
+    margin: 0;
+  }
+  .user-other-info ul li .form-switch input[role="switch"] {
+    /* background-color: #ee6562; */
+    background-color: rgb(
+      0,
+      160,
+      255
+    ); /*    background: linear-gradient(90deg, rgba(0,160,255,1) 0%, rgba(110,225,255,1) 100%);*/
+  }
+  .form-switch .form-check-input {
+    width: 3.2em;
+    height: 1.5em;
+    margin-left: -2.5em;
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='3' fill='white'/></svg>") !important;
+    background-position: left center;
+    border-radius: 2em;
+    border: 0;
+    transition: background-position 0.15s ease-in-out;
+  }
+  button.save-btn {
+    background: rgb(0, 160, 255);
+    background: linear-gradient(
+      90deg,
+      rgba(0, 160, 255, 1) 0%,
+      rgba(110, 225, 255, 1) 100%
+    );
+    color: #fff;
+    border: 0;
+    border-radius: 10px;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 600;
+    margin-top: 0px;
+    height: 60px;
+    width: 360px;
+    margin-left: auto;
+  }
+  .stories-panel,
+  .stories,
+  .stories-box {
+    position: relative;
+  }
+  .stories-panel .stories {
+    background: #f7f7f9;
+    box-shadow: 0px 1px 3px 0px #00000026;
+    border-radius: 12px;
+    margin-bottom: 30px;
+  }
+  .stories-panel .stories .stories-box {
+    border-radius: 12px;
+    padding: 10px;
+    position: relative;
+    height: 390px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .stories-panel .stories .stories-box:before {
+    content: "";
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) -3.93%,
+      rgba(0, 0, 0, 0.65) 96.07%
+    );
+    background-blend-mode: multiply;
+    border-radius: 12px 12px 0 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  .stories-panel .stories .stories-box .stories-header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+  .stories-panel .stories .stories-box .stories-header h4 {
+    color: #fff;
+    font-family: "MaisonNeue-Demi", sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 1.2;
+    margin-bottom: 0;
+  }
+  .stories-panel .stories .stories-box .stories-header h4 span {
+    color: #f6f6f9;
+    display: block;
+    font-family: "MaisonNeue-Book", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .stories-panel .stories .stories-box .stories-header a {
+    color: #00a0ff;
+    font-family: "MaisonNeue-Book", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .stories-panel .stories .stories-box .stories-footer {
+    position: relative;
+  }
+  .stories-panel .stories .stories-box .stories-footer .stories-author img {
+    width: 42px;
+    height: 42px;
+    border: 0px solid;
+    border-image-slice: 1;
+    border-width: 0px;
+    border-radius: 100%;
+    object-fit: cover;
+    box-shadow: 0px 0px 0px 2px rgb(233 166 67), 0px 0px 0px 2px rgb(252 113 36);
+    margin-bottom: 6px;
+    margin-left: 2px;
+  }
+  .stories-panel .stories .stories-box .stories-footer .stories-author h5 {
+    color: #f7f7f9;
+    font-family: "MaisonNeue-Demi", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .stories-panel .stories .stories-content {
+    position: relative;
+    padding: 10px;
+  }
+  .stories-panel .stories .stories-content ul {
+    display: flex;
+    align-items: center;
+  }
+  .stories-panel .stories .stories-content ul li {
+    margin-right: 8px;
+  }
+  .stories-panel .stories .stories-content ul li a {
+    font-family: "MaisonNeue-Book", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .stories-panel .stories .stories-content ul li a.meta-cat {
+    color: #00a0ff;
+  }
+  .stories-panel .stories .stories-content ul li a.meta-date {
+    color: #6e6e6e;
+    border-left: 1px solid #6e6e6e;
+    padding-left: 8px;
+  }
+  .stories-panel .stories .stories-content ul.stories-social li {
+    margin-right: 12px;
+  }
+  .stories-panel .stories .stories-content ul.stories-social li a {
+    color: #3c3c3c;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .stories-panel .stories .stories-content ul.stories-social li a img {
+    margin-top: -2px;
+  }
+  .stories-panel .stories .stories-content ul.stories-action li {
+    margin-right: 16px;
+  }
+  .stories-panel .stories .stories-content ul.stories-action li:last-child {
+    margin-left: auto;
+    margin-right: 0px;
+  }
+  .stories-panel
+    .stories
+    .stories-content
+    ul.stories-action
+    li:last-child
+    a.user-new-btn {
+    background: rgb(233, 233, 233);
+    background: linear-gradient(
+      180deg,
+      rgba(233, 233, 233, 1) 0%,
+      rgba(110, 225, 255, 1) 35%,
+      rgba(0, 160, 255, 1) 100%
+    );
+    color: #fff;
+    border: 0;
+    border-radius: 20px;
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 500;
+    padding: 8px 15px;
+    height: 34px;
+    width: 100%;
+    display: inline;
+    position: relative;
+  }
+  .story-action-panel {
+      background: whitesmoke;
+      width: 100%;
+      padding: 30px 0px 30px 0px;
+  }
+  .story-action-panel .action-box {
+    display: flex;
+    justify-content: space-between; /*    margin-bottom: 50px;*/
+  }
+  .story-action-panel .action-box .social-info ul li {
+    margin-left: 20px;
+  }
+  .story-action-panel .action-box .social-info ul li a {
+    color: #3c3c3c;
+    font-family: "MaisonNeue-Book", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .story-action-panel .action-box .social-info ul li a img {
+    height: 24px;
+    width: 24px;
+  }
+  .story-featured {
+    position: relative;
+    display: flex;
+  }
+  .story-action-panel
+    .action-box
+    .story-featured
+    .form-switch
+    .form-check-input:last-child {
+    margin: 0 0px 0px 5px !important;
+  }
+  .stories-panel .edit-story-form .stories-box {
+    height: 100%;
+    padding: 0;
+  }
+  /*.stories-panel .edit-story-form .stories-box img {
+    height: 400px;
+    object-fit: cover;
+  }*/
+  .stories-panel .edit-story-form .stories {
+    background: transparent;
+    padding: 0;
+  }
+  .stories-panel .edit-story-form .stories-box a.icon-play {
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+  }
+  .stories-panel .edit-story-form .stories-box a.icon-play img {
+    height: auto;
+  }
+  .stories-panel .edit-story-form .user-story-group {
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex: 0 0 50%;
+  }
+  .stories-panel .edit-story-form .form-group {
+    margin-bottom: 10px;
+  }
+  .stories-panel .edit-story-form .user-story-group .user-text {
+    position: relative;
+    padding-left: 15px;
+  }
+  .stories-panel .edit-story-form .user-story-group .user-text a,
+  .stories-panel .edit-story-form .user-story-group .user-text p,
+  .stories-panel .edit-story-form .user-story-group .user-text h5 {
+    color: #3c3c3c;
+    font-family: "MaisonNeue-Demi", sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: right;
+    margin: 0;
+  }
+  .stories-panel .edit-story-form .user-story-group .user-text h5 {
+    font-weight: 600;
+  }
+  .stories-panel .edit-story-form .user-story-group .user-text p {
+    font-weight: 400;
+  }
+  .stories-panel .edit-story-form .user-story-group .user-text a {
+    color: #00a0ff;
+  }
+  .form-group.user-story-group .user-media {
+    background: transparent;
+    border-radius: 100%;
+    padding: 3px;
+  }
+  .stories-panel .edit-story-form .user-media img {
+    width: 68px;
+    height: 68px;
+    border: 0px solid;
+    border-image-slice: 1;
+    border-width: 0px;
+    border-radius: 100%;
+    object-fit: cover; /*    box-shadow: 0px 0px 0px 4px rgb(0,160,255), 0px 0px 0px 4px rgb(110,225,255);*/
+  }
+  .stories-panel .edit-story-form .story-bio-group textarea {
+    background: transparent;
+    border: 1px solid #d7d7d7;
+    border-radius: 6px;
+    min-height: 132px;
+    height: auto;
+    width: 420px;
+    margin-top: 20px;
+    padding: 15px 130px 15px 15px;
+  }
+  .stories-panel .edit-story-form .story-bio-group textarea {
+    color: #3c3c3c;
+    font-family: "MaisonNeue-Demi", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 33px;
+    resize: none;
+  }
+  .stories-panel .edit-story-form .story-bio-group {
+    position: relative;
+  }
+  .stories-panel .edit-story-form .story-bio-group img {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    margin: 30px -30px;
+  }
+  .stories-panel .edit-story-form .user-categories {
+    background: #fff;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    border: 0;
+    margin: 0 0 10px 0;
+    border-radius: 6px;
+    margin-right: 15px;
+    width: 420px;
+    position: relative;
+  }
+  .stories-panel .edit-story-form .user-categories select {
+    color: #3c3c3c;
+    font-family: "MaisonNeue-Book", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    margin: 0;
+    height: 100%;
+    width: 420px;
+    border: 0;
+    border-radius: 6px;
+    padding: 0 10px;
+    -webkit-appearance: none;
+  }
+  .stories-panel .edit-story-form .user-categories select:focus {
+    outline: 0;
+    box-shadow: none;
+    border: 0;
+  }
+  .stories-panel .edit-story-form .user-categories img {
+    position: relative;
+    right: 10px;
+    top: 0;
+  }
+  .stories-panel .edit-story-form .form-group h5 {
+    color: #3c3c3c;
+    font-family: "MaisonNeue-Book", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    margin-top: 20px;
+  }
+  .stories-panel .edit-story-form .form-group button.save-btn {
+    background: rgb(0, 160, 255);
+    background: linear-gradient(
+      90deg,
+      rgba(0, 160, 255, 1) 0%,
+      rgba(110, 225, 255, 1) 100%
+    );
+    color: #fff;
+    border: 0;
+    border-radius: 10px;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 600;
+    margin-top: -10px;
+    height: 60px;
+    width: 100%;
+  }
+  .stories-panel .edit-story-form .form-group button.save-btn {
+    background: rgb(0, 160, 255);
+    background: linear-gradient(
+      90deg,
+      rgba(0, 160, 255, 1) 0%,
+      rgba(110, 225, 255, 1) 100%
+    );
+    color: #fff;
+    border: 0;
+    border-radius: 10px;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 600;
+    margin-top: -10px;
+    height: 60px;
+    width: 390px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  .support-form .form-group input,
+  .support-form .form-group textarea {
+    height: 40px;
+    width: 100%;
+    border-radius: 6px;
+    border: 0;
+    font-family: "MaisonNeue-Book", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    margin: 0 0 15px 0;
+    padding: 15px 15px;
+    outline: 0;
+  }
+  .support-form .form-group input {
+      width: 75%;
+  }
+  .support-form .form-group textarea {
+    height: 200px;
+    resize: none;
+  }
+  .support-form .form-group input[type="checkbox"] {
+    background: #d9d9d9;
+    height: 16px;
+    width: 16px;
+    top: 2px;
+    position: relative;
+  }
+  form.support-form button.save-btn {
+    position: relative;
+    margin-top: 10px;
+  }
+  form.support-form .form-group label a {
+    color: #3c3c3c;
+    text-decoration: underline;
+  }
+  .pagination {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .pagination ul {
+    display: flex;
+    position: relative;
+    margin: 0;
+  }
+  .pagination ul li {
+    margin-right: 15px;
+  }
+  .pagination ul li a {
+    color: #3c3c3c;
+    font-size: 18px;
+    font-family: "MaisonNeue-Demi", sans-serif;
+    text-decoration: underline;
+  }
+  .pagination ul li:last-child a,
+  .pagination ul li:first-child a,
+  .pagination ul li a.active {
+    font-weight: 600;
+  }
+  .pagination ul li a.active {
+    text-decoration: none;
+  }
+  .story-featured a {
+    background: rgb(233, 233, 233);
+    background: linear-gradient(
+      180deg,
+      rgba(233, 233, 233, 1) 0%,
+      rgba(110, 225, 255, 1) 35%,
+      rgba(0, 160, 255, 1) 100%
+    );
+    color: #fff;
+    border: 0;
+    border-radius: 20px;
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 500;
+    padding: 1px 18px;
+    height: 34px; /* width: 161px; */
+    display: inline;
+    top: 0px;
+    position: relative;
+  }
+  a.border-btn {
+    display: block;
+    line-height: 0;
+    height: 38px;
+    width: auto;
+    padding: 2px;
+    border-radius: 20px;
+    background: linear-gradient(
+      180deg,
+      rgba(233, 233, 233, 1) 0%,
+      rgba(110, 226, 255, 1) 35%,
+      rgba(0, 160, 255, 1) 100%
+    );
+  }
+  a.border-btn span {
+    background: whitesmoke;
+    border-radius: 20px;
+    padding: 0px 15px;
+    line-height: 0;
+    display: block;
+    font-family: "MaisonNeue-Book", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 34px;
+    align-items: center;
+    color: #3c3c3c;
+  }
+  .articles-panel,
+  .articles,
+  .articles-box {
+    position: relative;
+  }
+  .articles-panel .articles {
+    background: #f7f7f9;
+    box-shadow: 0px 1px 3px 0px #00000026;
+    border-radius: 12px;
+    margin-bottom: 30px;
+  }
+  .articles-panel .articles .articles-box {
+    border-radius: 12px 12px 0 0;
+    padding: 10px;
+    position: relative;
+    height: 370px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+  }
+  .articles-panel .articles .articles-box:before {
+    content: "";
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.65) 100%
+    );
+    background-blend-mode: multiply;
+    transform: rotate(-180deg);
+    border-radius: 12px 12px 0 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  .articles-panel .articles .articles-box .articles-header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+  }
+  .articles-panel .articles .articles-box .articles-header .articles-author {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  .articles-panel
+    .articles
+    .articles-box
+    .articles-header
+    .articles-author
+    .profile-picture {
+    margin-right: 10px;
+  }
+  .articles-panel .articles .articles-box .articles-header h4 {
+    color: #fff;
+    font-family: "MaisonNeue-Demi", sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 1.2;
+  }
+  .articles-panel .articles .articles-box .articles-header h4 span {
+    color: #f6f6f9;
+    display: block;
+    font-family: "MaisonNeue-Book", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+  }
+  .articles-panel .articles .articles-box .articles-header a {
+    color: #00a0ff;
+    font-family: "MaisonNeue-Book", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 15px;
+  }
+  .articles-panel .articles .articles-box .articles-footer {
+    position: relative;
+    padding: 0 70px 0 15px;
+  }
+  .articles-panel .articles .articles-box .articles-footer h5 {
+    color: #f7f7f9;
+    font-family: "MaisonNeue-Demi", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 27px;
+    line-height: 34px;
+  }
+  .articles-panel .articles .articles-content {
+    position: relative;
+    padding: 10px;
+  }
+  .articles-panel .articles .articles-content ul {
+    display: flex;
+    align-items: center;
+  }
+  .articles-panel .articles .articles-content ul li {
+    margin-right: 8px;
+  }
+  .articles-panel .articles .articles-content ul li a {
+    font-family: "MaisonNeue-Book", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .articles-panel .articles .articles-content ul li a.meta-cat {
+    color: #00a0ff;
+  }
+  .articles-panel .articles .articles-content ul li a.meta-date {
+    color: #6e6e6e;
+    border-left: 1px solid #6e6e6e;
+    padding-left: 8px;
+  }
+  .articles-panel .articles .articles-content ul.articles-social li {
+    margin-right: 12px;
+  }
+  .articles-panel .articles .articles-content ul.articles-social li a {
+    color: #3c3c3c;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .articles-panel .articles .articles-content ul.articles-social li a img {
+    margin-top: -2px;
+  }
+  .articles-panel .articles .articles-content ul.articles-action li {
+    margin-right: 16px;
+  }
+  .articles-panel .articles .articles-content ul.articles-action li:last-child {
+    margin-left: auto;
+    margin-right: 0px;
+  }
+  .articles-panel
+    .articles
+    .articles-content
+    ul.articles-action
+    li:last-child
+    a.user-new-btn {
+    background: rgb(233, 233, 233);
+    background: linear-gradient(
+      180deg,
+      rgba(233, 233, 233, 1) 0%,
+      rgba(110, 225, 255, 1) 35%,
+      rgba(0, 160, 255, 1) 100%
+    );
+    color: #fff;
+    border: 0;
+    border-radius: 20px;
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 500;
+    padding: 8px 15px;
+    height: 34px;
+    width: 100%;
+    display: inline;
+    position: relative;
+  }
+  .articles-panel,
+  .articles,
+  .articles-box {
+    position: relative;
+  }
+  .articles-panel .articles {
+    background: #f7f7f9;
+    box-shadow: 0px 1px 3px 0px #00000026;
+    border-radius: 12px;
+    margin-bottom: 30px;
+  }
+  .articles-panel .articles .articles-box {
+    border-radius: 12px;
+    padding: 10px;
+    position: relative;
+    height: 390px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .articles-panel .articles .articles-box:before {
+    content: "";
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) -3.93%,
+      rgba(0, 0, 0, 0.65) 96.07%
+    );
+    background-blend-mode: multiply;
+    border-radius: 12px 12px 0 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+  }
+  .articles-panel .articles .articles-box .articles-header {
+    position: relative;
+    display: flex;
+  }
+  .articles-panel .articles .articles-box .articles-header h4 {
+    color: #fff;
+    font-family: "MaisonNeue-Demi", sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 1.2;
+    margin-bottom: 0;
+  }
+  .articles-panel .articles .articles-box .articles-header h4 span {
+    color: #f6f6f9;
+    font-family: "MaisonNeue-Book", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .articles-panel .articles .articles-box .articles-header a {
+    color: #00a0ff;
+    font-family: "MaisonNeue-Book", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .articles-panel .articles .articles-box .articles-footer {
+    position: relative;
+  }
+  .articles-panel .articles .articles-box .articles-footer .articles-author img {
+    width: 42px;
+    height: 42px;
+    border: 0px solid;
+    border-image-slice: 1;
+    border-width: 0px;
+    border-radius: 100%;
+    object-fit: cover;
+    box-shadow: 0px 0px 0px 2px rgb(233 166 67), 0px 0px 0px 2px rgb(252 113 36);
+    margin-bottom: 6px;
+    margin-left: 2px;
+  }
+  .articles-panel .articles .articles-box .articles-footer .articles-author h5 {
+    color: #f7f7f9;
+    font-family: "MaisonNeue-Demi", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .articles-panel .articles .articles-content {
+    position: relative;
+    padding: 10px;
+  }
+  .articles-panel .articles .articles-content ul {
+    display: flex;
+    align-items: center;
+  }
+  .articles-panel .articles .articles-content ul li {
+    margin-right: 8px;
+  }
+  .articles-panel .articles .articles-content ul li a {
+    font-family: "MaisonNeue-Book", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .articles-panel .articles .articles-content ul li a.meta-cat {
+    color: #00a0ff;
+  }
+  .articles-panel .articles .articles-content ul li a.meta-date {
+    color: #6e6e6e;
+    border-left: 1px solid #6e6e6e;
+    padding-left: 8px;
+  }
+  .articles-panel .articles .articles-content ul.articles-social li {
+    margin-right: 12px;
+  }
+  .articles-panel .articles .articles-content ul.articles-social li a {
+    color: #3c3c3c;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .articles-panel .articles .articles-content ul.articles-social li a img {
+    margin-top: -2px;
+  }
+  .articles-panel .articles .articles-content ul.articles-action li {
+    margin-right: 16px;
+  }
+  .articles-panel .articles .articles-content ul.articles-action li:last-child {
+    margin-left: auto;
+    margin-right: 0px;
+  }
+  .articles-panel
+    .articles
+    .articles-content
+    ul.articles-action
+    li:last-child
+    a.user-new-btn {
+    background: rgb(233, 233, 233);
+    background: linear-gradient(
+      180deg,
+      rgba(233, 233, 233, 1) 0%,
+      rgba(110, 225, 255, 1) 35%,
+      rgba(0, 160, 255, 1) 100%
+    );
+    color: #fff;
+    border: 0;
+    border-radius: 20px;
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 500;
+    padding: 8px 15px;
+    height: 34px;
+    width: 100%;
+    display: inline;
+    position: relative;
+  }
+  .article-action-panel {
+    background: whitesmoke;
+    width: 100%;
+    padding: 30px 0px 30px 0px;
+  }
+  .articles-panel.over {
+    overflow-y: hidden;
+  }
+  .inner-flow {
+    width: 100%;
+    /*overflow-y: scroll;
+    padding-right: 1rem;
+    height: 50vh;*/
+  }
+  .article-action-panel .action-box {
+    display: flex;
+    justify-content: space-between; /*    margin-bottom: 50px;*/
+  }
+  .article-action-panel .action-box .social-info ul li {
+    margin-left: 20px;
+  }
+  .article-action-panel .action-box .social-info ul li a {
+    color: #3c3c3c;
+    font-family: "MaisonNeue-Book", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .article-action-panel .action-box .social-info ul li a img {
+    height: 24px;
+    width: 24px;
+  }
+  .form-switch {
+    position: relative;
+  }
+  .form-switch:before {
+    /* background-image: linear-gradient(90deg, rgba(0,160,255,1) 0%, rgba(110,225,255,1) 100%); */
+    content: "";
+    background: rgb(215, 215, 215);
+    background: linear-gradient(
+      0deg,
+      rgba(215, 215, 215, 1) 0%,
+      rgba(215, 215, 215, 1) 65%
+    );
+    position: absolute;
+    height: 24px;
+    width: 52px;
+    border-radius: 20px;
+    right: 0px; /* z-index: -9; */
+  }
+  .form-switch.active:before {
+    background-image: linear-gradient(
+      90deg,
+      rgba(0, 160, 255, 1) 0%,
+      rgba(110, 225, 255, 1) 100%
+    );
+    transition: 0.5s all;
+  } /*.article-action-panel .action-box .article-featured .form-switch .form-check-input:checked{    background: transparent !important;}*/
+  .form-check-input {
+    position: relative;
+    background-color: transparent !important;
+    margin: 0 15px 0px 5px !important;
+  }
+  .user-other-info .form-check-input {
+    background-color: transparent !important;
+    margin: 0 0px 0px 5px !important;
+  }
+  .article-action-panel
+    .action-box
+    .article-featured
+    .form-switch
+    .form-check-input:last-child {
+    margin: 0 0px 0px 5px !important;
+  }
+  .articles-panel .edit-article-form .articles-box {
+    height: 100%;
+    padding: 0;
+  }
+  .articles-panel .edit-article-form .articles {
+    /*    cursor: move;*/
+    background: transparent;
+    padding: 0;
+  }
+  .articles-panel .edit-article-form .articles-box {
+    background: #ffffff;
+    border-radius: 6px;
+    filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.15));
+  }
+  .articles-panel .edit-article-form .articles-box p {
+    color: #342922;
+    font-family: "MaisonNeue-Book", sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 23px;
+    padding: 15px 50px 15px 15px;
+    margin-bottom: 0;
+  }
+  .articles-panel .edit-article-form .form-group .articles-box .icon-rectangle,
+  .articles-panel .edit-article-form .form-group .articles-box .icon-delete {
+    position: absolute;
+    right: 15px;
+    background: #fff;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  .articles-panel .edit-article-form .form-group .articles-box .icon-rectangle {
+    top: 15px;
+  }
+  .articles-panel .edit-article-form .form-group .articles-box .icon-delete {
+    bottom: 15px;
+  }
+  .articles-panel .edit-article-form .articles-box a.icon-play {
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
+  }
+  .articles-panel .edit-article-form .user-article-group {
+    display: flex;
+    align-items: center;
+    position: relative;
+    flex: 0 0 50%;
+  }
+  .articles-panel .edit-article-form .form-group {
+    /* cursor: move; */
+    margin-bottom: 25px;
+    position: relative;
+  }
+  .articles-panel .edit-article-form .user-article-group .user-text {
+    position: relative;
+    padding-left: 15px;
+  }
+  .articles-panel .edit-article-form .user-article-group .user-text a,
+  .articles-panel .edit-article-form .user-article-group .user-text p,
+  .articles-panel .edit-article-form .user-article-group .user-text h5 {
+    color: #3c3c3c;
+    font-family: "MaisonNeue-Demi", sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: right;
+    margin: 0;
+  }
+  .articles-panel .edit-article-form .user-article-group .user-text h5 {
+    font-weight: 600;
+  }
+  .articles-panel .edit-article-form .user-article-group .user-text p {
+    font-weight: 400;
+  }
+  .user-article-group .user-media {
+    background: linear-gradient(
+      180deg,
+      rgba(233, 233, 233, 1) 0%,
+      rgba(110, 226, 255, 1) 35%,
+      rgba(0, 160, 255, 1) 100%
+    );
+    padding: 3px;
+    border-radius: 100%;
+  }
+  .articles-panel .edit-article-form .user-media img {
+    width: 68px;
+    height: 68px;
+    border: 0px solid;
+    border-image-slice: 1;
+    border-width: 0px;
+    border-radius: 100%;
+    object-fit: cover; /*    box-shadow: 0px 0px 0px 4px rgb(0,160,255), 0px 0px 0px 4px rgb(110,225,255);*/
+  }
+  .articles-panel .user-text a {
+    color: #00a0ff !important;
+  }
+  .articles-panel .edit-article-form .article-bio-group textarea {
+    background: transparent;
+    border: 1px solid #d7d7d7;
+    border-radius: 6px;
+    min-height: 132px;
+    height: auto;
+    width: 420px;
+    margin-top: 0px;
+    padding: 15px 190px 15px 15px;
+  }
+  .articles-panel .edit-article-form .article-bio-group textarea {
+    color: #3c3c3c;
+    font-family: "MaisonNeue-Demi", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 33px;
+    resize: none;
+    width: 100%;
+  }
+  .articles-panel .edit-article-form .article-bio-group {
+    position: relative;
+  }
+  .articles-panel .edit-article-form .article-bio-group img {
+      cursor: pointer;
+      position: absolute;
+      top: 15px;
+      right: 15px;
+  }
+  .articles-panel .edit-article-form .user-categories {
+    background: #fff;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    border: 0;
+    margin: 0 0 10px 0;
+    border-radius: 6px;
+    margin-right: 15px;
+    width: 100%;
+    position: relative;
+  }
+  .articles-panel .edit-article-form .user-categories select {
+    color: #3c3c3c;
+    font-family: "MaisonNeue-Book", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    margin: 0;
+    height: 100%;
+    width: 420px;
+    border: 0;
+    border-radius: 6px;
+    padding: 0 10px;
+    -webkit-appearance: none;
+  }
+  .articles-panel .edit-article-form .user-categories select:focus {
+    outline: 0;
+    box-shadow: none;
+    border: 0;
+  }
+  .articles-panel .edit-article-form .user-categories img {
+    position: relative;
+    right: 10px;
+    top: 0;
+  }
+  .articles-panel .edit-article-form .form-group h5 {
+    color: #3c3c3c;
+    font-family: "MaisonNeue-Book", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    margin-top: 20px;
+  }
+  .form-group.article-date h5 {
+      color: #6e6e6e !important;
+      font-family: "MaisonNeue-Book", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+  }
+  .articles-panel .edit-article-form .form-group button.save-btn {
+    background: rgb(0, 160, 255);
+    background: linear-gradient(
+      90deg,
+      rgba(0, 160, 255, 1) 0%,
+      rgba(110, 225, 255, 1) 100%
+    );
+    color: #fff;
+    border: 0;
+    border-radius: 10px;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 600;
+    margin-top: -10px;
+    height: 60px;
+    width: 100%;
+  }
+  .articles-panel .edit-article-form .form-group button.save-btn {
+    background: rgb(0, 160, 255);
+    background: linear-gradient(
+      90deg,
+      rgba(0, 160, 255, 1) 0%,
+      rgba(110, 225, 255, 1) 100%
+    );
+    color: #fff;
+    border: 0;
+    border-radius: 10px;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 600;
+    margin-top: -10px;
+    height: 60px;
+    width: 390px;
+  }
+  .articles-panel .edit-article-form .article-media-group {
+    border: 1px solid #d7d7d7;
+    position: relative;
+    width: 100%;
+    height: 350px;
+    margin-bottom: 30px;
+  }
+  .articles-panel .edit-article-form .article-media-group input {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    opacity: 0;
+    z-index: 99;
+  }
+  .articles-panel .edit-article-form .article-media-group span {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  .articles-panel .edit-article-form .articles-box input {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    opacity: 0;
+    z-index: 99;
+  }
+  .articles-panel .edit-article-form .articles-box span {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  .publish-article {
+    position: relative;
+    margin-left: auto;
+  }
+  .publish-article a {
+    background: rgb(233, 233, 233);
+    background: linear-gradient(
+      180deg,
+      rgba(233, 233, 233, 1) 0%,
+      rgba(110, 225, 255, 1) 35%,
+      rgba(0, 160, 255, 1) 100%
+    );
+    color: #fff;
+    border: 0;
+    border-radius: 20px;
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 500;
+    padding: 8px 15px;
+    height: 34px;
+    width: 161px;
+    display: inline;
+    top: 0px;
+    position: relative;
+  }
+  .format-box-panel {
+    background: #f5f5f5;
+    padding: 8px 18px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .format-box {
+    display: inline-block;
+    background: linear-gradient(
+      180deg,
+      rgba(233, 233, 233, 1) 0%,
+      rgba(110, 226, 255, 1) 35%,
+      rgba(0, 160, 255, 1) 100%
+    );
+    padding: 5px 5px;
+    border-radius: 50px;
+    margin-top: 30px;
+  }
+  .format-box-panel a {
+    margin: 0 10px;
+  }
+  .filter-form form .form-group {
+    flex: auto;
+    width: 100%;
+    margin: auto 1rem auto auto;
+  }
+  .filter-form .user-types,
+  .search-form .user-types {
+    width: 100%;
+  }
+  .forum-listing-panel .profile-picture img {
+    width: 68px;
+    height: 68px;
+    border: 0px solid;
+    border-image-slice: 1;
+    border-width: 0px;
+    border-radius: 100%;
+    object-fit: cover;
+  }
+  .forum-listing-panel,
+  ul.nav-panel {
+    width: 100%; /*height: 60vh;*/ /*overflow-y: scroll;*/
+  }
+  .stories-panel,
+  .articles-panel {
+      width: 100%;
+    /*padding-top: 1.4rem;
+    padding-left: 0;
+    height: 65vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-right: 1rem;*/
+  }
+  .forum-listing-panel::-webkit-scrollbar,
+  ul.nav-panel::-webkit-scrollbar,
+  .stories-panel::-webkit-scrollbar,
+  .inner-flow::-webkit-scrollbar,
+  .articles-panel::-webkit-scrollbar {
+    width: 3px;
+    border-radius: 2em;
+    padding: 3px;
+  }
+  .forum-listing-panel::-webkit-scrollbar-track,
+  ul.nav-panel::-webkit-scrollbar-track,
+  .inner-flow::-webkit-scrollbar-track,
+  .articles-panel::-webkit-scrollbar-track,
+  .stories-panel::-webkit-scrollbar-track {
+    background-color: #fff;
+    border-radius: 2em;
+  }
+  .forum-listing-panel::-webkit-scrollbar-thumb,
+  ul.nav-panel::-webkit-scrollbar-thumb,
+  .stories-panel::-webkit-scrollbar-thumb,
+  .inner-flow::-webkit-scrollbar-thumb,
+  .articles-panel::-webkit-scrollbar-thumb {
+    background: linear-gradient(
+      90deg,
+      rgba(0, 160, 255, 1) 0%,
+      rgba(110, 225, 255, 1) 100%
+    );
+    border-radius: 2em;
+  }
+  .forum-listing-panel p {
+    margin: 0;
+  }
+  .listing-box {
+    background: #f7f7f9;
+    box-shadow: 0px 1px 3px 0px #00000026;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    margin-bottom: 10px;
+    min-height: 160px;
+    height: auto;
+    margin: 1rem;
+    margin-left: 0;
+  }
+  .social-info a {
+    color: black;
+  }
+  .image-box,
+  .forum-question,
+  .social-info,
+  .action {
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+    justify-content: space-between;
+  }
+  .forum-question {
+      padding: 0 0 0 30px;
+  }
+  .listing-box .social-info{
+      flex: 0 0 35%;
+  }
+  .image-box p {
+    color: #00a0ff;
+    display: block;
+    font-weight: 400;
+    margin-bottom: 0;
+  }
+  .question h5 {
+    color: #3c3c3c;
+    font-family: "MaisonNeue-Demi", sans-serif;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 24px;
+    width: 60%;
+  }
+  p.category {
+    color: #00a0ff;
+    display: block;
+    font-weight: 400;
+    margin-bottom: 0;
+    margin-right: 6px;
+  }
+  .author p {
+    margin: 0;
+  }
+  .author p strong {
+    margin-right: 20px;
+  }
+  .social-info ul.stories-social {
+    display: flex;
+    align-items: center;
+    column-gap: 25px;
+  }
+  .social-info ul.stories-social li img {
+      margin-top: -2px;
+      padding-left: 2px;
+  }
+  .date-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .action ul.stories-action {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+  }
+  .action .stories-action img {
+      width: 26px;
+      margin: 0;
+  }
+  .edit-btn {
+    background: linear-gradient(180deg, rgba(233, 233, 233, 1) 0%, rgba(110, 225, 255, 1) 35%, rgba(0, 160, 255, 1) 100%);
+    color: #fff;
+    border: 0;
+    border-radius: 20px;
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 500;
+    width: 100%;
+    text-align: center;
+  }
+  .edit-btn a {
+    color: white;
+  } /* Messages */
+  .messages-listing-panel {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .messages-listing-panel ul.nav-panel {
+    width: 100%;
+    /*height: 50vh;
+    overflow-y: scroll;*/
+  }
+  .messages-listing-panel ul.nav-panel li.nav-panel-item {
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100px;
+    height: auto;
+    margin: 1rem;
+    margin-left: 0;
+    background: #f7f7f9;
+    box-shadow: 0px 1px 3px 0px #00000026;
+    padding: 1rem;
+  }
+  .messages-listing-panel ul.nav-panel li.nav-panel-item .message-media {
+    display: flex;
+    align-items: center;
+    flex: 0 0 50%;
+  }
+  .messages-listing-panel
+    ul.nav-panel
+    li.nav-panel-item
+    .message-media
+    .check-mark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 55px;
+    height: 55px;
+    border-radius: 100%;
+    margin-right: 15px;
+  }
+  .messages-listing-panel ul.nav-panel li.nav-panel-item .message-info h5 {
+    font-family: "MaisonNeue-Demi", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 24px;
+    color: #3c3c3c;
+  }
+  .messages-listing-panel ul.nav-panel li.nav-panel-item .message-info a,
+  .messages-listing-panel ul.nav-panel li.nav-panel-item .message-info p {
+    color: #6e6e6e;
+    font-family: "MaisonNeue-Book", sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    margin: 0;
+  }
+  .messages-listing-panel ul.nav-panel li.nav-panel-item .message-info a {
+    color: #00a0ff;
+  }
+  .messages-listing-panel ul.nav-panel li.nav-panel-item .message-info p span {
+    color: #3c3c3c;
+  }
+  .messages-listing-panel ul.nav-panel li.nav-panel-item .view-messages p {
+    font-family: "MaisonNeue-Demi", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    color: #3c3c3c;
+    margin: 0;
+  }
+  .messages-listing-panel ul.nav-panel li.nav-panel-item .messages-action {
+    display: flex;
+    flex: 0 0 18%;
+    justify-content: space-between;
+  }
+  .messages-listing-panel
+    ul.nav-panel
+    li.nav-panel-item
+    .messages-action
+    a.message-new-btn {
+    background: rgb(233, 233, 233);
+    background: linear-gradient(
+      180deg,
+      rgba(233, 233, 233, 1) 0%,
+      rgba(110, 225, 255, 1) 35%,
+      rgba(0, 160, 255, 1) 100%
+    );
+    color: #fff;
+    border: 0;
+    border-radius: 20px;
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 500;
+    height: 34px;
+    width: 105px;
+    text-align: center;
+    display: inline;
+    position: relative;
+  }
+  .message-panel {
+    padding-top: 30px;
+  }
+  .message-panel .article-sidebar {
+      padding-left: 25px;
+  }
+  .messase-send-to select {
+    opacity: 0.6;
+  }
+  .message-panel .edit-article-form .heading_group input {
+    background: transparent;
+    border: 1px solid #d7d7d7;
+    border-radius: 6px;
+    min-height: 52px;
+    height: auto;
+    width: 100%;
+    margin-top: 0px;
+    padding: 15px 0px 15px 15px;
+    color: #3c3c3c;
+    font-family: "MaisonNeue-Demi", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 33px;
+    resize: none;
+    width: 100%;
+  }
+  .message-panel .edit-article-form .heading_group input::placeholder {
+    color: #3c3c3c;
+  }
+  .message-panel .edit-article-form .heading_group img {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    margin: 25px -30px;
+  }
+  .message-content-box {
+    position: relative;
+    border: 1px solid #d7d7d7;
+    border-radius: 8px;
+    padding: 15px;
+  }
+  .message-content-box a.icon-edit {
+    position: absolute;
+    right: 0;
+    margin: 0 10px;
+  }
+  .message-content-box textarea {
+    background: transparent;
+    border: 0;
+    height: 160px;
+    width: 100%;
+    overflow-y: hidden;
+    font-family: "MaisonNeue-Book", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #6e6e6e;
+    resize: none;
+  }
+  .message-content-box textarea:focus {
+    outline: 0;
+    box-shadow: none;
+    border: 0;
+  }
+  .message-content-box .img-box {
+    width: 340px;
+    position: relative;
+  }
+  .message-content-box .img-box a.icon-delete {
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+    background: #fff;
+    padding: 5px;
+    border-radius: 6px;
+  }
+  a.sheduled-btn {
+    background: #e2800c;
+    color: #fff;
+    border: 0;
+    border-radius: 20px;
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 500;
+    padding: 8px 15px;
+    height: 34px;
+    width: 161px;
+    display: inline;
+    top: 0px;
+    position: relative;
+  }
+  a.update-btn {
+    background: rgb(233, 233, 233);
+    background: linear-gradient(
+      180deg,
+      rgba(233, 233, 233, 1) 0%,
+      rgba(110, 225, 255, 1) 35%,
+      rgba(0, 160, 255, 1) 100%
+    );
+    color: #fff;
+    border: 0;
+    border-radius: 20px;
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 500;
+    padding: 8px 15px;
+    height: 34px;
+    width: 160px;
+    display: inline;
+    top: 0px;
+    position: relative;
+  }
+  a.shedule-btn {
+    background: rgb(233, 233, 233);
+    background: linear-gradient(
+      180deg,
+      rgba(233, 233, 233, 1) 0%,
+      rgba(110, 225, 255, 1) 35%,
+      rgba(0, 160, 255, 1) 100%
+    );
+    color: #fff;
+    border: 0;
+    border-radius: 20px;
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 500;
+    padding: 8px 15px;
+    height: 34px;
+    width: 160px;
+    display: inline;
+    top: 0px;
+    position: relative;
+  }
+  .messase-send-to {
+    background: #fff;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    border: 0;
+    border-radius: 6px;
+    margin-right: 15px;
+    padding: 15px;
+    width: 100%;
+    position: relative;
+  }
+  .messase-send-to span {
+    flex: 0 0 15%;
+  }
+  .messase-send-to select {
+    background: transparent;
+    color: #3c3c3c;
+    font-family: "MaisonNeue-Book", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    margin: 0; /* height: 100%; */
+    width: 100%;
+    border: 0;
+    border-radius: 6px;
+    -webkit-appearance: none;
+    z-index: 99;
+    background: transparent;
+  }
+  .messase-send-to {
+    font-family: "MaisonNeue-Book", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #3c3c3c;
+    position: relative;
+  }
+  .messase-send-to img {
+      position: absolute;
+      right: 8px;
+  }
+  .messase-send-to select:focus {
+    outline: 0;
+    box-shadow: none;
+    border: 0;
+  }
+  .check-mark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+  }
+  .message-date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+  .message-date .date-to {
+    flex: 0 0 88%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    right: -15px;
+  } /* Messages */
+  .app-listing-panel {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .app-listing-panel ul.nav-panel {
+    width: 100%;
+    /*height: 50vh;
+    overflow-y: scroll;*/
+  }
+  .app-listing-panel ul.nav-panel li.nav-panel-item {
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100px;
+    height: auto;
+    margin: 1rem;
+    margin-left: 0;
+    background: #f7f7f9;
+    box-shadow: 0px 1px 3px 0px #00000026;
+    padding: 1rem;
+  }
+  .app-listing-panel ul.nav-panel li.nav-panel-item .app-box {
+    position: relative;
+    display: flex;
+    flex: 0 0 50%;
+    align-items: center;
+  }
+  .app-listing-panel ul.nav-panel li.nav-panel-item .app-box .app-info {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+  }
+  .app-listing-panel ul.nav-panel li.nav-panel-item .app-media {
+    position: relative;
+    margin-right: 15px;
+  }
+  .app-listing-panel ul.nav-panel li.nav-panel-item img.app-thumb {
+    width: 72px;
+    height: 72px;
+    border-radius: 100%;
+    object-fit: cover;
+  }
+  .app-listing-panel
+    ul.nav-panel
+    li.nav-panel-item
+    .app-media
+    input[type="file"] {
+    position: absolute;
+    right: 0;
+    opacity: 0;
+    z-index: 99;
+    cursor: pointer;
+    display: inline;
+    width: 40px;
+    z-index: 99;
+  }
+  .app-listing-panel ul.nav-panel li.nav-panel-item .app-media span {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+  }
+  .app-listing-panel ul.nav-panel li.nav-panel-item .app-media span img {
+    width: 18px;
+    height: 18px;
+  }
+  .app-listing-panel ul.nav-panel li.nav-panel-item .app-info h5 {
+    color: #3c3c3c;
+    font-family: "MaisonNeue-Demi", sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 600;
+    margin: 0;
+  }
+  .app-listing-panel ul.nav-panel li.nav-panel-item .apps-action {
+    flex: 0 0 12%;
+    text-align: right;
+  }
+  .app-listing-panel ul.nav-panel li.nav-panel-item .social-info {
+    align-items: center;
+  }
+  .app-listing-panel ul.nav-panel li.nav-panel-item .social-info ul {
+    column-gap: 25px;
+  }
+  .app-listing-panel ul.nav-panel li.nav-panel-item .social-info ul li {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+  }
+  .app-filter-panel .filter-form .app-types {
+    background: #fff;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    border: 0;
+    margin: 0 0 10px 0;
+    border-radius: 6px;
+    margin-right: 15px;
+    width: 100%;
+    position: relative;
+  }
+  .app-filter-panel .filter-form .app-types select {
+      background: transparent;
+    color: #3c3c3c;
+    font-family: "MaisonNeue-Book", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    border: 0;
+    border-radius: 6px;
+    padding: 0 10px;
+    -webkit-appearance: none;
+    z-index: 99;
+  }
+  .app-filter-panel .filter-form .app-types img {
+      position: absolute;
+      right: 10px;
+      top: 12px;
+  }
+  .app-listing-panel .add-more {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .apps-action a.app-new-btn {
+    background: rgb(233, 233, 233);
+    background: linear-gradient(
+      180deg,
+      rgba(233, 233, 233, 1) 0%,
+      rgba(110, 225, 255, 1) 35%,
+      rgba(0, 160, 255, 1) 100%
+    );
+    color: #fff;
+    border: 0;
+    border-radius: 20px;
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 500;
+    height: 34px;
+    width: 70px;
+    text-align: center;
+    display: inline;
+    position: relative;
+    margin-left: 15px;
+  }
+  .app-listing-panel ul.nav-panel li.nav-panel-item .configuration-listing {
+    flex: 0 0 70%;
+  }
+  .app-listing-panel
+    ul.nav-panel
+    li.nav-panel-item
+    .configuration-listing
+    .app-info {
+    margin-left: 0;
+  }
+  .app-listing-panel
+    ul.nav-panel
+    li.nav-panel-item
+    .app-box
+    .app-info
+    .app-media-info
+    p {
+    color: #6e6e6e;
+    font-family: "MaisonNeue-Book", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .app-listing-panel
+    ul.nav-panel
+    li.nav-panel-item
+    .app-box
+    .app-info
+    .app-media-info
+    a {
+    color: #6e6e6e;
+  }
+  .app-listing-panel
+    ul.nav-panel
+    li.nav-panel-item
+    .app-box
+    .app-info
+    .app-media-info
+    h5 {
+    margin-bottom: 5px;
+  }
+  .app-listing-panel ul.nav-panel li.nav-panel-item .full-media {
+    position: relative;
+    margin-right: 15px;
+    flex: 0 0 130px;
+  }
+  .app-listing-panel
+    ul.nav-panel
+    li.nav-panel-item
+    .configuration-listing
+    .app-info
+    .full-media
+    img {
+    border-radius: 12px 0px 0 12px;
+    width: 100%;
+    height: 100px;
+  }
+  .terms-panel {
+    margin-bottom: 30px;
+  }
+  .terms-panel h4 {
+    color: #3c3c3c;
+    font-family: "MaisonNeue-Demi", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 1.4rem;
+    margin-bottom: 6px;
+  }
+  .terms-content {
+    padding: 30px;
+    background: #fff;
+    position: relative;
+    margin-bottom: 30px;
+  }
+  .user-article-group {
+    display: flex;
+    align-items: center;
+  }
+  .user-article-group .user-text {
+    position: relative;
+    padding-left: 15px;
+  }
+  .user-article-group .user-text a,
+  .user-article-group .user-text p,
+  .user-article-group .user-text h5 {
+    color: #3c3c3c;
+    font-family: "MaisonNeue-Demi", sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: right;
+    margin: 0;
+  }
+  .user-article-group .user-text h5 {
+    font-weight: 600 !important;
+  }
+  .user-article-group .user-text p {
+    font-weight: 400;
+  }
+  .user-article-group .user-text a {
+    color: #00a0ff !important;
+  }
+  .user-categories {
+    background: #fff;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    border: 0;
+    margin: 0 0 10px 0;
+    border-radius: 6px;
+    margin-right: 15px;
+    width: 85%;
+    position: relative;
+  }
+  .user-categories select {
+    color: #3c3c3c;
+    font-family: "MaisonNeue-Book", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    margin: 0;
+    height: 100%;
+    width: 420px;
+    border: 0;
+    border-radius: 6px;
+    padding: 0 10px;
+    -webkit-appearance: none;
+  }
+  .user-categories img {
+    position: relative;
+    right: 10px;
+    top: 0;
+  }
+  .edit-forum .form-group h5 {
+    color: #3c3c3c;
+    font-family: "MaisonNeue-Book", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    margin-top: 20px;
+  }
+  .edit-forum-section {
+    margin: 2rem 0;
+  }
+  .content-box {
+    background: #f7f7f9;
+    box-shadow: 0px 1px 3px rgb(0 0 0 / 15%);
+    border-radius: 12px;
+    padding: 1rem;
+    position: relative;
+    padding-right: 2rem;
+  }
+  .comment-box {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    column-gap: 20px;
+    margin: 1rem 0;
+  }
+  .comment-box .image-box {
+    flex: 0 0 52px;
+  }
+  .image-box img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+  .action a.delete {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+  }
+  .action a.reply {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+  }
+  .action img {
+    width: 26px;
+    margin: 10px 5px;
+  }
+  .right-edit-forum {
+    width: 100%;
+    padding-left: 25px;
+    /*height: 60vh;
+    overflow-y: scroll;
+    padding-right: 1rem;*/
+  }
+  .inner-form-left {
+      position: sticky;
+      top: 0;
+  }
+  .edit-forum-section .form-group.article-bio-group {
+    position: relative;
+    width: auto;
+    margin-right: 1rem;
+  }
+  .inner-form-left textarea {
+      width: 100%;
+      color: #3c3c3c;
+      font-family: "MaisonNeue-Demi", sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 30px;
+      line-height: 35px;
+      resize: none;
+      width: 100%;
+      padding: 1rem 4rem 3rem 2rem;
+      padding-left: 1rem;
+      border: 1px solid #d7d7d7;
+      border-radius: 6px;
+      background: transparent;
+  }
+  .form-group.article-bio-group img {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+  }
+  .right-edit-forum .comment-box:first-child {
+    margin: 0;
+  }
+  textarea.content {
+    padding: 1rem 2rem;
+    padding-left: 1rem;
+    font-family: "MaisonNeue-Book", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: #3c3c3c;
+    height: 120px;
+  }
+  .edit-article-section {
+      padding-top: 0;
+  }
+  .inner-chat {
+    width: 100%;
+    /*height: 55vh;
+    overflow-y: scroll;
+    padding-right: 1rem;*/
+  }
+  .inner-chat .form-group.article-bio-group textarea {
+    width: 100%;
+    color: #3c3c3c;
+    font-family: "MaisonNeue-Demi", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 33px;
+    resize: none;
+    width: 100%;
+    background: transparent;
+    border: 1px solid #d7d7d7;
+    border-radius: 6px;
+    min-height: 132px;
+    height: auto;
+    padding: 2rem;
+  }
+  .inner-chat .form-group.draggable {
+    width: 100%;
+    height: auto;
+    background: #fff;
+    border-radius: 6px;
+  }
+  .form-group.draggable p {
+    /* font-style: italic; */
+    color: #342922;
+    font-family: "MaisonNeue-Book", sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 23px;
+    margin: 0;
+    padding: 1rem;
+    padding-right: 3rem;
+  }
+  .draggable a.icon-delete {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #fff;
+    padding: 6px;
+    border-radius: 8px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .draggable a.icon-rectangle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #fff;
+    padding: 6px;
+    border-radius: 8px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .inner-chat input,
+  .profile-box input {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 0;
+    opacity: 0;
+    z-index: 99;
+  }
+  .draggable span,
+  .profile-box span {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+  }
+  .profile-box span {
+    left: unset;
+    right: 10px;
+  }
+  .profile-box {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin-bottom: 1rem;
+  }
+  .profile-box img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: 100% 0%;
+  }
+  .right-section {
+    width: 95%;
+    margin-left: auto;
+    position: sticky;
+    top:0;
+  }
+  .profile-box span > img {
+    width: auto;
+    height: auto;
+  }
+  a.requests-new-btn {
+      background: rgb(233, 233, 233);
+      background: linear-gradient( 180deg, rgba(233, 233, 233, 1) 0%, rgba(110, 225, 255, 1) 35%, rgba(0, 160, 255, 1) 100% );
+      color: #fff;
+      border: 0;
+      border-radius: 20px;
+      font-size: 18px;
+      line-height: 32px;
+      font-weight: 500;
+      height: 34px;
+      width: 100%;
+      text-align: center;
+      display: inline;
+      position: relative;
+  }
+  .requests-action {
+      flex: 0 0 24% !important;
+      column-gap: 25px;
+      align-items: center;
+  }
+  .app-filter-panel {
+      width: 100%;
+  }
